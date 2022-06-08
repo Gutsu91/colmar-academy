@@ -34,7 +34,7 @@ header figure {
     display: flex;
 }
 
-header figure img {
+.header-icon {
     height: 42px;
 }
 
@@ -50,10 +50,19 @@ header figure figcaption {
     color: black;
 }
 
+header nav ul {
+    display: flex;
+}
+
 header nav ul li {
     display: inline;
     padding: 1rem;
     font-size: 1.2rem;
+    margin: auto 0;
+}
+
+header nav ul li img {
+    display: none;
 }
 
 header nav ul li a {
@@ -63,4 +72,41 @@ header nav ul li a {
 
 header nav ul li:last-of-type {
     padding-right: 0.5rem;
+}
+
+@media only screen and (max-width: 720px) {
+    header {
+        padding: 0px 24px;
+    }
+    
+    header figure figcaption {
+        display: none;
+    }
+    header nav ul li img {
+        display: block;
+    }
+
+    .nav-link-text {
+        display: none;
+    }
+
+    .for-companies-link {
+        display: none;
+    }
+    header figure {
+        width: 25%;
+    }
+
+    header nav {
+        width: 75%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul li {
+        padding: 0.6em;
+    }
 }
