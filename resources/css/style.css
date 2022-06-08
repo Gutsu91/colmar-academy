@@ -24,6 +24,10 @@ body {
 main {
     padding-top: 4rem;
 }
+
+section {
+    padding: 2rem 0;
+}
 /* Header */
 header {
     padding: 0.25rem 1.5rem;
@@ -209,6 +213,9 @@ figcaption.landing a {
     figcaption.landing h1 {
         font-size: 2rem;
     }
+    figcaption.landing p {
+        font-size: 1.2rem;
+    }
 
     figcaption.landing {
         max-width: 90%;
@@ -227,4 +234,46 @@ figcaption.landing a {
     h1 {
         font-size: 2rem;
     }
+}
+
+/* Article section */
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    width: 100%;
+    height: 400px;
+}
+
+img.hero {
+    width: 100%;
+}
+
+.article-hero {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 3
+}
+
+figure.article-hero {
+    max-width: 60%;
+}
+
+.article {
+    flex-shrink: 2;
+}
+
+.article figure {
+    display: flex;
+}
+
+.article figure img {
+    height: 100px;
+}
+
+.article figure figcaption {
+    display: flex;
+    flex-direction: column;
 }
