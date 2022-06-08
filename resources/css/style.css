@@ -23,7 +23,7 @@ body {
 
 /* Header */
 header {
-    padding: 0.7rem 1.5rem;
+    padding: 0.25rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,12 +42,12 @@ header figure figcaption {
     font-size: 1.8rem;
     text-transform: uppercase;
     color: lightgrey;
-    letter-spacing: 0.1rem;;
+    letter-spacing: 0.1rem;
 }
 
 .colmar-name-header {
     font-weight: 600;
-    color: black;
+    color: #2b2a2a;
 }
 
 header nav ul {
@@ -74,9 +74,23 @@ header nav ul li:last-of-type {
     padding-right: 0.5rem;
 }
 
+@media only screen and (min-width: 721px) and (max-width:890px) {
+    header figure figcaption span {
+        display: block;
+    }
+    .header-icon {
+        height: 84px;
+    }
+
+    header nav ul li {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
 @media only screen and (max-width: 720px) {
     header {
-        padding: 0px 24px;
+        padding: 0 1.5rem;
     }
     
     header figure figcaption {
