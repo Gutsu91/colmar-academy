@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap) format('woff2');
+}
+
+/* universal style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', Verdana, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    padding: 0.7rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+header figure {
+    display: flex;
+}
+
+header figure img {
+    height: 42px;
+}
+
+header figure figcaption {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: lightgrey;
+    letter-spacing: 0.1rem;;
+}
+
+.colmar-name-header {
+    font-weight: 600;
+    color: black;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555353;
+}
+
+header nav ul li:last-of-type {
+    padding-right: 0.5rem;
+}
