@@ -430,6 +430,10 @@ img.hero {
     padding: 0.5rem 0;
 }
 
+.learning-item figure figcaption p {
+    text-transform:capitalize;
+}
+
 @media only screen and (max-width:890px) {
     #learning {
         border-top: 1px solid lightgrey;
@@ -454,6 +458,134 @@ img.hero {
     .learning-item figure figcaption span,
     .learning-item figure figcaption p
      {
+        display: none;
+    }
+}
+/* Thesis */
+#thesis {
+    padding: 2rem 0;
+}
+
+#thesis h2 {
+    font-size: 2rem;
+    color:#555353;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.thesis-main-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0rem 0 0;
+    display: flex;
+}
+
+.thesis-video-wrapper {
+    width: 60%;
+    padding: 0 1.5rem;
+}
+
+.thesis-video-wrapper video {
+    max-width: 100%;
+}
+
+.thesis-video-wrapper h3 {
+    padding: 1.5rem 0 0.5rem 0; 
+    color:#2b2a2a;
+}
+
+.thesis-video-wrapper p {
+    color:#555353;
+}
+
+.thesis-column-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5rem;
+}
+
+.thesis-column-wrapper article {
+    padding: 1rem;
+}
+
+.thesis-column-wrapper article:first-of-type {
+    background-color: lightgrey;
+}
+
+.thesis-column-wrapper article figure {
+    display: flex;
+}
+
+.thesis-column-wrapper article figure img {
+    width: 35%;
+    height: auto;
+}
+
+.thesis-column-wrapper article figcaption {
+    width: 65%;
+    padding: 1rem;
+}
+
+.thesis-column-wrapper article figcaption h3 {
+    color:#2b2a2a;
+}
+
+.thesis-column-wrapper article figcaption p {
+    padding-top: 1rem;
+    color:#555353
+}
+
+@media only screen and (max-width:890px) {
+    .thesis-video-wrapper {
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+        
+    .thesis-column-wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .thesis-video-wrapper {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .thesis-video-wrapper h3,
+    .thesis-video-wrapper p {
+        display: none;
+    }
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    height: 4rem;
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+}
+
+footer p {
+    color:#555353
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:#555353;
+    padding: 0 0.5rem;
+}
+
+@media only screen and (max-width:480px) {
+    footer ul {
         display: none;
     }
 }
